@@ -1,0 +1,25 @@
+{
+  "name": "Travel Fun Facts",
+  "description" : "Get fun facts about travel from all over the world",
+  "author" : "Chandni Ssirohi",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "icons":{
+  	"128":"travel.png"
+  },
+  "browser_action":{
+  	"deafault_icon" : "travel.png",
+  	"deafault_title": "Travel Fun Facts"
+
+  },
+  "chrome_url_overrides":{
+    "newtab" : "index.html"
+  },
+
+  "permissions": ["activeTab"],
+  
+  "background":{
+    "scripts":["main.js"]
+  }
+ 
+}
